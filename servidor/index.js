@@ -1,12 +1,12 @@
 const express = require("express");
-const app = express();
-//const mysql = require("mysql");
 const cors = require("cors");
+const mysql = require('mysql2'); // Usa mysql2 que soporta caching_sha2_password
 
+
+const app = express();
 app.use(cors());    //Antes de que renderice, use cors
 app.use(express.json());
 
-const mysql = require('mysql2'); // Usa mysql2 que soporta caching_sha2_password
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -116,5 +116,3 @@ app.delete("/eliminar/:id", (req, res) => {
 app.listen(3001, ()=>{
     console.log("Corriendo en el puerto 3001");
 });
-
-//CREATE USER 'testDB'@'localhost' IDENTIFIED WITH mysql_native_password BY '0516';
