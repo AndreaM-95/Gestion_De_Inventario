@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: url('../../public/Bg_Login.jpg');
+    background-size: cover; /* Esto hace que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+}
+#root{
+    display: contents;
+}
+
+.titulo_loguin, .datos, .btn_ingresar{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.box_logueo{
+    margin: 10% auto;
+}
+
+.entrada{
+    width: 280px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.btn_ingresar{
+    width: 130px;
+    height: 50px;
+}
+
+.btn_ingresar:hover{
+    border: #BCAEA2 solid 2px;
+}

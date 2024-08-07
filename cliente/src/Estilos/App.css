@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.datos{
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.titulo, .titulo_tabla{
+  font-family: "Fira Sans", sans-serif;
+}
+
+.caracteristica, .box_productos, .box_acciones, .id, .subtitulo, .acciones, .btn_acciones, .btn_registrar, .btn_salir{
+  font-family: "Ubuntu", sans-serif;
+}
+
+.titulo{
+  margin: 1rem 0;
+}
+.titulo_tabla{
+  border-radius: 50px 50px 0 0;
+  padding: 15px 0;
+}
+
+input,
+select {
+  width: 50%;
+  min-height: 2em;
+}
+
+.caracteristica {
+  width: 90%;
+  margin: 10px;
+}
+
+.btn_acciones, .btn_registrar, .btn_salir{
+  border: transparent solid 2px;
+}
+.btn_salir{
+  margin-right: 10%;
+  width: 150px;
+}
+
+.btn_acciones{
+  width: 100px;
+  margin: 5px;
+}
+
+.btn_registrar{
+  width: 130px;
+  margin: 10px 0;
+}
+
+.btn_acciones:hover, .btn_registrar:hover, .btn_salir:hover{
+  border: #BCAEA2 solid 2px;
+}
+
+.lista{
+  margin: 2% auto;
+  width: 60%;
+}
+
+.subtitulo{
+  width: 10%;
+}
+.acciones{
+  width: 15%;
+}
+.id{
+  width: 3%;
+}
